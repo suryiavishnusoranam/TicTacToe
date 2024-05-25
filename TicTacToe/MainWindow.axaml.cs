@@ -1,8 +1,8 @@
+using System;
 using Avalonia;
+using Avalonia.Markup.Xaml;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
-using Avalonia.Markup.Xaml;
-using System;
 
 namespace TicTacToe
 {

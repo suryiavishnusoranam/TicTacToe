@@ -13,7 +13,7 @@ UI design, and game logic implementation.
 
 {Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/CBjxqSoK89Y)
 
 # Development Environment
 
@@ -32,7 +32,7 @@ which provides tools and controls to create a modern and responsive user interfa
 
 - [Microsoft C# Documentation](https://learn.microsoft.com/en-us/dotnet/csharp/)
 - [Avalonia UI Documentation](https://docs.avaloniaui.net/docs/welcome)
-- [W3Schools C#] (https://www.w3schools.com/cs/index.php)
+- [W3Schools C#](https://www.w3schools.com/cs/index.php)
 
 
 # Future Work
