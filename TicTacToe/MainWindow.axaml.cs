@@ -8,16 +8,10 @@ namespace TicTacToe
 {
     public partial class MainWindow : Window
     {
-        private string _ongoingPlayer; // Holds the symbol of the current player ('X' or 'O')
+        private string _ongoingPlayer; // Stores the symbol of the current player ('X' or 'O')
         private string[] _canvas; // Represents the Tic-Tac-Toe board
         private Button[] _buttons; // Array to hold references to the grid cell buttons
-
-        public MainWindow()
-        {
-            InitializeComponent(); // Initialize the UI components
-            InitializeGame(); // Set up the initial game state
-        }
-
+        
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
@@ -39,6 +33,11 @@ namespace TicTacToe
             {
                 button.Click += OnButtonClicked;
             }
+        }
+        public MainWindow()
+        {
+            InitializeComponent(); // Initialize the UI components
+            InitializeGame(); // Set up the initial game state
         }
 
         private void InitializeGame()
@@ -125,13 +124,13 @@ namespace TicTacToe
 
         private void ResetGame()
         {
-            // Reset game
+            // Resets game
             InitializeGame();
         }
 
         private async System.Threading.Tasks.Task ShowMessageAsync(string message)
         {
-            // Create and display a message box
+            // Creates and displays a message box
             var messageBox = new Window
             {
                 Title = "Tic Tac Toe!",
@@ -159,10 +158,10 @@ namespace TicTacToe
             };
 
             var button = (Button)((StackPanel)messageBox.Content).Children[1];
-            // Close the message box on button click
+            // Closes the message box on button click
             button.Click += (sender, e) => messageBox.Close();
             
-            // Show the message box
+            // Shows the message box
             await messageBox.ShowDialog(this);
         }
     }
